@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <title>Flask Demo</title>
+    <h1>Finding your Zodiac Sign</h1>
+
+    <form action="{{ url_for('zodiac_result') }}", method=POST>
+        Day <input type="number" name="day"><br>
+        Month <input type="number" name="month"><br>
+        <input type="submit" value="Find my Zodiac sign!">
+    </form>
+</html>

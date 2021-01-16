@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <title>Flask Demo</title>
+    <h1>Finding Your Zodiac Sign</h1>
+
+    <p>Your birth month is {{ month }} and your birth day is {{ day }}, so your Zodiac sign is: {{ zodiac_sign }}</p>
+
+    <form action= "{{ url_for('home') }}">
+        <input type="submit" value="Go back to home page!"/>
+    </form>
+</html>
